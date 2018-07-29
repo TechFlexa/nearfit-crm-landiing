@@ -1,5 +1,4 @@
 $primary: #ffb900;
-$link: #ffb900;
 $family-primary: "Roboto Slab", serif;
 @import "../../node_modules/bulma/bulma";
 
@@ -11,13 +10,14 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+html{
+    background-color: #EAEEF2
+}
 .navbar.is-transparent {
   background-color: transparent;
 }
 .mainHero {
-  .hero-body {
-    flex-grow: 0.5;
-  }
+  
   .background-shapes {
     z-index: -15;
     position: absolute;
@@ -59,11 +59,20 @@ h6 {
   font-style: normal;
   color: $primary;
 }
-.mainHero .featureBlock {
-  p {
-    text-align: justify;
-  }
-  .is-title {
-    font-weight: bold;
-  }
+
+.featureBlock{
+    text-align: center;
+
+    p{
+        text-align: justify;
+        color: $text-light;
+        font-size: 0.9rem
+    }
+    h3{
+        //later
+    }
+    figure{
+        display: block;
+        margin: 0 auto;
+    }
 }
