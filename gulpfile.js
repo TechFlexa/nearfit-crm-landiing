@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 var coffeeSources = ['app/scripts/hello.coffee'],
     jsSources = ['app/scripts/*.js'],
     sassSources = ['app/styles/*.scss'],
-    htmlSources = ['**/*.html'],
+    htmlSources = ['**/*.html','app/templates/**/*.njk'],
     outputDir = 'src/assets';
 
 
