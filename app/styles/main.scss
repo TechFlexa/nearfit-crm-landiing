@@ -2,8 +2,14 @@ $primary:#FFB900;
 $family-primary:'Roboto Slab', serif;
 @import "../../node_modules/bulma/bulma";
 
+html{
+    background: #EAEEF2;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Raleway', sans-serif;
+}
+.p-title{
+    color: #FFB900
 }
 .navbar.is-transparent{
     background-color: transparent
@@ -56,12 +62,19 @@ h1,h2,h3,h4,h5,h6{
     color: $primary;
 
 }
-.mainHero .featureBlock{
+.featureBlock{
+    text-align: center;
 
     p{
-        text-align: justify
+        text-align: justify;
+        color: $text-light;
+        font-size: 0.9rem
     }
-    .is-title{
-        font-weight: bold;
+    h3{
+        //later
+    }
+    figure{
+        display: block;
+        margin: 0 auto;
     }
 }

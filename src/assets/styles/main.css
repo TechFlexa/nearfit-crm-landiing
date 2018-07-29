@@ -6419,6 +6419,9 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+html {
+  background: #EAEEF2; }
+
 h1,
 h2,
 h3,
@@ -6426,6 +6429,9 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif; }
+
+.p-title {
+  color: #FFB900; }
 
 .navbar.is-transparent {
   background-color: transparent; }
@@ -6470,8 +6476,12 @@ h6 {
   font-style: normal;
   color: #FFB900; }
 
-.mainHero .featureBlock p {
-  text-align: justify; }
-
-.mainHero .featureBlock .is-title {
-  font-weight: bold; }
+.featureBlock {
+  text-align: center; }
+  .featureBlock p {
+    text-align: justify;
+    color: #7a7a7a;
+    font-size: 0.9rem; }
+  .featureBlock figure {
+    display: block;
+    margin: 0 auto; }
