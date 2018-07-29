@@ -1,4 +1,5 @@
-$primary: #ffb900;
+// $primary: #ffb900;
+$primary: #ff7300;
 $family-primary: "Lato", serif;
 @import "../../node_modules/bulma/bulma";
 
@@ -10,30 +11,36 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-.p-title{
-    color: $primary !important;
+.p-title {
+  color: $primary !important;
 }
-html{
-    background-color: #EAEEF2
+html {
+  background-color: #eaeef2;
 }
-.headingBlock{
-    margin-bottom: 4.5rem
+.headingBlock {
+  margin-bottom: 4.5rem;
 }
 .light-blue-bg {
-    background-color: #58b4ff;
-  }
+  background-color: #58b4ff;
+}
 .navbar.is-transparent {
   background-color: transparent;
 }
-.navbar-menu .navbar-item{
-    color: $grey;
-    letter-spacing: 1.5px;
+.navbar-menu .navbar-item {
+  color: $grey;
+  letter-spacing: 1.5px;
 }
-.navbar-menu .navbar-item{
-    padding-right: 0px
+.navbar-menu .navbar-item {
+  padding-right: 0px;
 }
-.navbar-menu .navbar-item:last-child:after{content:'';padding:0;}
-.navbar-menu .navbar-item:after{content:'\00B7';padding-left:0.75rem;}
+.navbar-menu .navbar-item:last-child:after {
+  content: "";
+  padding: 0;
+}
+.navbar-menu .navbar-item:after {
+  content: "\00B7";
+  padding-left: 0.75rem;
+}
 
 .mainHero {
   .background-shapes {
@@ -95,33 +102,31 @@ html{
   }
 }
 
-.pricingSection{
-    text-align: center;
+.pricingSection {
+  text-align: center;
 
-    .priceBlock{
-        background-color: $light;
-        padding: 2.5rem;
-        box-shadow: 0 2px 12px 0 rgba(90, 22, 224, 0.27);
-        border-radius: 6px;
+  .priceBlock {
+    background-color: $light;
+    padding: 2.5rem;
+    box-shadow: 0 2px 12px 0 rgba(90, 22, 224, 0.27);
+    border-radius: 6px;
 
-        footer{
-            margin-top: 2.5rem;
-        }
-        .subtitle{
-            color: $grey
-        }
-        .media + .media {
-            padding-top: 0px;
-            border-top: 0px;
-        }
-        .media-left{
-            color: $primary
-        }
-        figure {
-            display: block;
-            margin: 0 auto;
-            
-          }
+    footer {
+      margin-top: 2.5rem;
     }
-    
+    .subtitle {
+      color: $grey;
+    }
+    .media + .media {
+      padding-top: 0px;
+      border-top: 0px;
+    }
+    .media-left {
+      color: $primary;
+    }
+    figure {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
