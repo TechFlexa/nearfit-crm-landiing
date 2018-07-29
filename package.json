@@ -1,0 +1,25 @@
+{
+  "name": "nearfit-techflexa",
+  "version": "0.0.1",
+  "description": "Design for nearfit crm pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-data": "^1.3.1",
+    "gulp-nunjucks-render": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
