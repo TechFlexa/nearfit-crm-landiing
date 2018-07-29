@@ -1,67 +1,69 @@
-$primary:#FFB900;
-$family-primary:'Roboto Slab', serif;
+$primary: #ffb900;
+$link: #ffb900;
+$family-primary: "Roboto Slab", serif;
 @import "../../node_modules/bulma/bulma";
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
 }
-.navbar.is-transparent{
-    background-color: transparent
+.navbar.is-transparent {
+  background-color: transparent;
 }
-.mainHero{
-
-    .hero-body{
-        flex-grow: 0.5;
-    }
-    .background-shapes{
-        z-index:-15;
-        position: absolute;
-        width: 100%;
-
-        .front-section{
-            width: 860px;
-            height: 768px;
-            border-bottom-left-radius: 42px;
-            background-color: #fbf9fc;
-            position: relative;
-            right: -600px;
-            top: -360px;
-            box-shadow: 0 2px 49px 0 rgba(90, 22, 224, 0.27);
-            transform: skew(20deg, -5deg);
-        }
-        .back-section{
-            z-index: -2;
-            width: 1440px;
-            height: 200px;
-            border-bottom-left-radius: 42px;
-            position: relative;
-            top: -525px;
-            right: -850px;
-            background-color: rgba(170, 145, 219, 0.2);
-            transform: skew(20deg, -5deg);
-        }
-    }
-    
-}
-.mainHero .is-background{
+.mainHero {
+  .hero-body {
+    flex-grow: 0.5;
+  }
+  .background-shapes {
+    z-index: -15;
     position: absolute;
-    width: 1440px;
-    height: 1440px;
-    right: -720px;
-    top: -900px;
-	z-index:-5;
-}
-.mainHero h2 > i{
-    font-style: normal;
-    color: $primary;
+    width: 100%;
 
+    .front-section {
+      width: 860px;
+      height: 768px;
+      border-bottom-left-radius: 42px;
+      background-color: #fbf9fc;
+      position: relative;
+      right: -600px;
+      top: -360px;
+      box-shadow: 0 2px 49px 0 rgba(90, 22, 224, 0.27);
+      transform: skew(20deg, -5deg);
+    }
+    .back-section {
+      z-index: -2;
+      width: 1440px;
+      height: 200px;
+      border-bottom-left-radius: 42px;
+      position: relative;
+      top: -525px;
+      right: -850px;
+      background-color: rgba(170, 145, 219, 0.2);
+      transform: skew(20deg, -5deg);
+    }
+  }
 }
-.mainHero .featureBlock{
-
-    p{
-        text-align: justify
-    }
-    .is-title{
-        font-weight: bold;
-    }
+.mainHero .is-background {
+  position: absolute;
+  width: 1440px;
+  height: 1440px;
+  right: -720px;
+  top: -900px;
+  z-index: -5;
+}
+.mainHero h2 > i {
+  font-style: normal;
+  color: $primary;
+}
+.mainHero .featureBlock {
+  p {
+    text-align: justify;
+  }
+  .is-title {
+    font-weight: bold;
+  }
 }
