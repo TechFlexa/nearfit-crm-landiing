@@ -1,86 +1,171 @@
 {% extends "mainLayout.njk" %} {% block content %}
 <section class="hero is-fullheight mainHero">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-5">
-          <h2 class="subtitle is-3">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-5">
+                    <h2 class="subtitle is-3">
             Let
             <i>Galaxy CRM</i> take the hard work while you focus on making your fitness centre better.
           </h2>
-          <a class="button is-large is-primary">Get a free demo</a>
+                    <a class="button is-large is-primary">Get a free demo</a>
+                </div>
+                <div class="column is-5 is-offset-2" style="margin-top: -100px;">
+                    <img src="/assets/img/demo1.png" style="transform: rotateZ(-5deg);">
+                </div>
+            </div>
         </div>
-        <div class="column is-5 is-offset-2" style="margin-top: -100px;">
-          <img src="/assets/img/demo1.png" style="transform: rotateZ(-5deg);">
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="background-shapes">
-    <div class="front-section"></div>
-    <div class="back-section"></div>
-  </div>
+    <div class="background-shapes">
+        <div class="front-section"></div>
+        <div class="back-section"></div>
+    </div>
 </section>
-<section id="features" class="hero features is-dark is-large">
-  <div class="hero-body">
-    <div class="container">
-      <div class="headingBlock has-text-centered">
-        <h2 class="p-title title is-2">Why GalaxyCRM?</h2>
-      </div>
-      <br>
-      <br>
-      <div class="columns is-multiline is-centered">
-        <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Easy to use</h3>
-          <figure class="image is-128x128">
-            <img src="assets/img/illustrations/easy.svg" />
-          </figure>
+<section id="features" class="hero is-light featuresSection">
+    <div class="hero-body">
+        <div class="container">
+            <div class="headingBlock has-text-centered">
+                <h2 class="p-title title is-2">Why GalaxyCRM?</h2>
+            </div>
+            <div class="columns is-multiline is-centered">
+                <div class="column is-3 featureBlock has-text-centered">
+                    <h3 class="title is-4">Easy to use</h3>
+                    <figure class="image is-128x128">
+                        <img src="assets/img/illustrations/easy.svg" />
+                    </figure>
 
-          Get started with no prior experience of using any CRM software.
-        </div>
-        <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Grow business</h3>
+                    Get started with no prior experience of using any CRM software.
+                </div>
+                <div class="column is-3 featureBlock has-text-centered">
+                    <h3 class="title is-4">Grow business</h3>
 
-          <figure class="image is-128x128">
-            <img src="assets/img/illustrations/grow-business.svg" />
-          </figure>
+                    <figure class="image is-128x128">
+                        <img src="assets/img/illustrations/grow-business.svg" />
+                    </figure>
 
-          Focus on other things, we got your management.
-        </div>
-        <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">24/7 support</h3>
-          <figure class="image is-128x128">
-            <img src="assets/img/illustrations/support.svg" />
-          </figure>
+                    Focus on other things, we got your management.
+                </div>
+                <div class="column is-3 featureBlock has-text-centered">
+                    <h3 class="title is-4">24/7 support</h3>
+                    <figure class="image is-128x128">
+                        <img src="assets/img/illustrations/support.svg" />
+                    </figure>
 
-          Forget the old days of managing your customers using ledgers and books.
-        </div>
-        <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Secure Data</h3>
-          <figure class="image is-128x128">
-            <img src="assets/img/illustrations/secure-data.svg" />
-          </figure>
+                    Forget the old days of managing your customers using ledgers and books.
+                </div>
+                <div class="column is-3 featureBlock has-text-centered">
+                    <h3 class="title is-4">Secure Data</h3>
+                    <figure class="image is-128x128">
+                        <img src="assets/img/illustrations/secure-data.svg" />
+                    </figure>
 
-          Your data won't fall into wrong hand.
-        </div>
-        <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Cloud Based servers</h3>
-          <figure class="image is-128x128">
-            <img src="assets/img/illustrations/secure-server.svg" />
-          </figure>
+                    Your data won't fall into wrong hand.
+                </div>
+                <div class="column is-3 featureBlock has-text-centered">
+                    <h3 class="title is-4">Cloud Based servers</h3>
+                    <figure class="image is-128x128">
+                        <img src="assets/img/illustrations/secure-server.svg" />
+                    </figure>
 
-          Forget the old days of managing your customers using ledgers and books.
+                    Forget the old days of managing your customers using ledgers and books.
+                </div>
+                <div class="column is-3 featureBlock has-text-centered">
+                    <h3 class="title is-4">Manage Gyms</h3>
+                    <figure class="image is-128x128">
+                        <img src="assets/img/illustrations/manage-users.svg" />
+                    </figure>
+                    Forget the old days of managing your customers using ledgers and books.
+                </div>
+            </div>
         </div>
-        <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Manage Gyms</h3>
-          <figure class="image is-128x128">
-            <img src="assets/img/illustrations/manage-users.svg" />
-          </figure>
-          Forget the old days of managing your customers using ledgers and books.
-        </div>
-      </div>
     </div>
-  </div>
+</section>
+
+<section class="hero is-large pricingSection">
+    <div class="hero-body">
+      <div class="container">
+        <div class="headingBlock has-text-centered">
+                <h2 class="p-title title is-2">Pricing</h2>
+            </div>
+        <div class="columns is-centered">
+            <div class="column is-4 priceBlock">
+                <figure class="image is-128x128">
+                    <img src="assets/img/illustrations/secure-server.svg" />
+                </figure>
+
+                <h5 class="title is-3 p-title">Free</h5>
+                <p class="subtitle is-6">small business</p>
+
+                <article class="media">
+                    <span class="media-left">
+            <i class="fa fa-check"></i>
+          </span>
+                    <div class="media-content">NearFit Passes</div>
+                </article>
+                <article class="media">
+                    <span class="media-left">
+            <i class="fa fa-check"></i>
+          </span>
+                    <div class="media-content">Analytical Dashboard</div>
+                </article>
+                <article class="media">
+                    <span class="media-left">
+            <i class="fa fa-check"></i>
+          </span>
+                    <div class="media-content">Manage your Fitness Centre's appearance and details</div>
+                </article>
+
+                <footer>
+                    <a class="button is-primary is-rounded is-medium">Rs. 0.00 p/m</a>
+                </footer>
+
+            </div>
+
+            <div class="column is-4 is-offset-1 priceBlock">
+                <figure class="image is-128x128">
+                    <img src="assets/img/illustrations/secure-server.svg" />
+                </figure>
+
+                <h5 class="title is-3 p-title">Galaxy Plan</h5>
+                <p class="subtitle is-6">medium to large business</p>
+
+                <article class="media">
+                    <span class="media-left">
+            <i class="fa fa-check"></i>
+          </span>
+                    <div class="media-content">Manage customers</div>
+                </article>
+                <article class="media">
+                    <span class="media-left">
+            <i class="fa fa-check"></i>
+          </span>
+                    <div class="media-content">Lead Creation with SMS Remainder</div>
+                </article>
+                <article class="media">
+                    <span class="media-left">
+            <i class="fa fa-check"></i>
+          </span>
+                    <div class="media-content">Manage Employees</div>
+                </article>
+                <article class="media">
+                    <span class="media-left">
+            <i class="fa fa-check"></i>
+          </span>
+                    <div class="media-content">Verified Tag</div>
+                </article>
+                <article class="media">
+                    <span class="media-left">
+            <i class="fa fa-check"></i>
+          </span>
+                    <div class="media-content">Priority Support</div>
+                </article>
+                <footer>
+                    <a class="button is-primary is-rounded is-medium">Rs. 2499 p/m</a>
+                </footer>
+            </div>
+        </div>
+        </div>
+    </div>
 </section>
 <br>
 <br> {% endblock %}

@@ -262,7 +262,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Roboto Slab", serif; }
+  font-family: "Lato", serif; }
 
 code,
 pre {
@@ -6428,23 +6428,34 @@ h6 {
   font-family: "Raleway", sans-serif; }
 
 .p-title {
-  color: #ffb900; }
+  color: #ffb900 !important; }
 
 html {
-<<<<<<< HEAD
   background-color: #EAEEF2; }
-=======
-  background-color: #ebf6ed; }
+
+.headingBlock {
+  margin-bottom: 4.5rem; }
 
 .light-blue-bg {
   background-color: #58b4ff; }
->>>>>>> 37c75dedeb4f034221b17095749cfa2760489cb6
 
 .navbar.is-transparent {
   background-color: transparent; }
 
 .navbar-menu .navbar-item {
-  color: #4a4a4a; }
+  color: #7a7a7a;
+  letter-spacing: 1.5px; }
+
+.navbar-menu .navbar-item {
+  padding-right: 0px; }
+
+.navbar-menu .navbar-item:last-child:after {
+  content: '';
+  padding: 0; }
+
+.navbar-menu .navbar-item:after {
+  content: '\00B7';
+  padding-left: 0.75rem; }
 
 .mainHero .background-shapes {
   z-index: -15;
@@ -6454,7 +6465,7 @@ html {
     width: 860px;
     height: 768px;
     border-bottom-left-radius: 42px;
-    background-color: #fbf9fc;
+    background-color: whitesmoke;
     position: relative;
     right: -600px;
     top: -360px;
@@ -6492,3 +6503,23 @@ html {
   .featureBlock figure {
     display: block;
     margin: 0 auto; }
+
+.pricingSection {
+  text-align: center; }
+  .pricingSection .priceBlock {
+    background-color: whitesmoke;
+    padding: 2.5rem;
+    box-shadow: 0 2px 12px 0 rgba(90, 22, 224, 0.27);
+    border-radius: 6px; }
+    .pricingSection .priceBlock footer {
+      margin-top: 2.5rem; }
+    .pricingSection .priceBlock .subtitle {
+      color: #7a7a7a; }
+    .pricingSection .priceBlock .media + .media {
+      padding-top: 0px;
+      border-top: 0px; }
+    .pricingSection .priceBlock .media-left {
+      color: #ffb900; }
+    .pricingSection .priceBlock figure {
+      display: block;
+      margin: 0 auto; }

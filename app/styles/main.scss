@@ -1,5 +1,5 @@
 $primary: #ffb900;
-$family-primary: "Roboto Slab", serif;
+$family-primary: "Lato", serif;
 @import "../../node_modules/bulma/bulma";
 
 h1,
@@ -10,29 +10,31 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-<<<<<<< HEAD
 .p-title{
-    color: $primary;
+    color: $primary !important;
 }
 html{
     background-color: #EAEEF2
-=======
-// html {
-// background-color: #eaeef2;
-// }
-html {
-  background-color: #ebf6ed;
+}
+.headingBlock{
+    margin-bottom: 4.5rem
 }
 .light-blue-bg {
-  background-color: #58b4ff;
->>>>>>> 37c75dedeb4f034221b17095749cfa2760489cb6
-}
+    background-color: #58b4ff;
+  }
 .navbar.is-transparent {
   background-color: transparent;
 }
 .navbar-menu .navbar-item{
-    color: $text
+    color: $grey;
+    letter-spacing: 1.5px;
 }
+.navbar-menu .navbar-item{
+    padding-right: 0px
+}
+.navbar-menu .navbar-item:last-child:after{content:'';padding:0;}
+.navbar-menu .navbar-item:after{content:'\00B7';padding-left:0.75rem;}
+
 .mainHero {
   .background-shapes {
     z-index: -15;
@@ -43,7 +45,7 @@ html {
       width: 860px;
       height: 768px;
       border-bottom-left-radius: 42px;
-      background-color: #fbf9fc;
+      background-color: $light;
       position: relative;
       right: -600px;
       top: -360px;
@@ -91,4 +93,35 @@ html {
     display: block;
     margin: 0 auto;
   }
+}
+
+.pricingSection{
+    text-align: center;
+
+    .priceBlock{
+        background-color: $light;
+        padding: 2.5rem;
+        box-shadow: 0 2px 12px 0 rgba(90, 22, 224, 0.27);
+        border-radius: 6px;
+
+        footer{
+            margin-top: 2.5rem;
+        }
+        .subtitle{
+            color: $grey
+        }
+        .media + .media {
+            padding-top: 0px;
+            border-top: 0px;
+        }
+        .media-left{
+            color: $primary
+        }
+        figure {
+            display: block;
+            margin: 0 auto;
+            
+          }
+    }
+    
 }
