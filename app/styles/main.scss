@@ -10,11 +10,22 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+<<<<<<< HEAD
 .p-title{
     color: $primary;
 }
 html{
     background-color: #EAEEF2
+=======
+// html {
+// background-color: #eaeef2;
+// }
+html {
+  background-color: #ebf6ed;
+}
+.light-blue-bg {
+  background-color: #58b4ff;
+>>>>>>> 37c75dedeb4f034221b17095749cfa2760489cb6
 }
 .navbar.is-transparent {
   background-color: transparent;
