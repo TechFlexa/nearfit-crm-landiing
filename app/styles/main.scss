@@ -19,6 +19,9 @@ html{
 .navbar.is-transparent {
   background-color: transparent;
 }
+.navbar-menu .navbar-item{
+    color: $text
+}
 .mainHero {
   .background-shapes {
     z-index: -15;

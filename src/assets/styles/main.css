@@ -6431,10 +6431,13 @@ h6 {
   color: #ffb900; }
 
 html {
-  background-color: #eaeef2; }
+  background-color: #EAEEF2; }
 
 .navbar.is-transparent {
   background-color: transparent; }
+
+.navbar-menu .navbar-item {
+  color: #4a4a4a; }
 
 .mainHero .background-shapes {
   z-index: -15;
