@@ -6428,7 +6428,10 @@ h6 {
   font-family: "Raleway", sans-serif; }
 
 html {
-  background-color: #eaeef2; }
+  background-color: #ebf6ed; }
+
+.light-blue-bg {
+  background-color: #58b4ff; }
 
 .navbar.is-transparent {
   background-color: transparent; }
