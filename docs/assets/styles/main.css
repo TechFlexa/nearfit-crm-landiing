@@ -6546,8 +6546,9 @@ html {
       display: block;
       margin: 0 auto; }
 
-footer.footer a, footer.footer .fItem {
-  color: #7a7a7a !important; }
-
-footer.footer a:hover {
-  color: #363636 !important; }
+footer.footer {
+  padding-bottom: 4rem; }
+  footer.footer a, footer.footer .fItem {
+    color: #7a7a7a !important; }
+  footer.footer a:hover {
+    color: #363636 !important; }
