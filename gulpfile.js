@@ -11,14 +11,14 @@ var coffeeSources = ['app/scripts/hello.coffee'],
     jsSources = ['app/scripts/*.js'],
     sassSources = ['app/styles/*.scss'],
     htmlSources = ['**/*.html','app/templates/**/*.njk'],
-    outputDir = 'src/assets';
+    outputDir = 'docs/assets';
 
 
 gulp.task('sass', function() {
   gulp.src(sassSources)
   .pipe(sass({style: 'expanded'}))
     .on('error', gutil.log)
-  .pipe(gulp.dest('src/assets/styles'))
+  .pipe(gulp.dest('docs/assets/styles'))
   .pipe(connect.reload())
 });
 
@@ -26,14 +26,14 @@ gulp.task('coffee', function() {
   gulp.src(coffeeSources)
   .pipe(coffee({bare: true})
     .on('error', gutil.log))
-  .pipe(gulp.dest('src/assets/scripts'))
+  .pipe(gulp.dest('docs/assets/scripts'))
 });
 
 gulp.task('js', function() {
   gulp.src(jsSources)
   .pipe(uglify())
   .pipe(concat('script.js'))
-  .pipe(gulp.dest('src/assets/scripts'))
+  .pipe(gulp.dest('docs/assets/scripts'))
   .pipe(connect.reload())
 });
 
@@ -46,7 +46,7 @@ gulp.task('watch', function() {
 
 gulp.task('connect', function() {
   connect.server({
-    root: './src',
+    root: './docs',
     livereload: true
   })
 });
@@ -60,7 +60,7 @@ gulp.task('nunjucks', function() {
       .pipe(nunjucksRender({
         path: ['app/templates']
       }))
-      .pipe(gulp.dest('src'))
+      .pipe(gulp.dest('docs'))
   });
 
 gulp.task('html', function() {
