@@ -6419,13 +6419,17 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+a {
+  transition: 0.3s; }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  font-weight: normal; }
 
 .p-title {
   color: #ff7300 !important; }
@@ -6435,6 +6439,19 @@ html {
 
 .headingBlock {
   margin-bottom: 4.5rem; }
+  .headingBlock h2 {
+    font-weight: normal;
+    display: inline-block;
+    padding-bottom: 15px;
+    position: relative; }
+  .headingBlock h2:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 0.125rem solid #ff7300; }
 
 .light-blue-bg {
   background-color: #58b4ff; }
@@ -6444,43 +6461,44 @@ html {
 
 .navbar-menu .navbar-item {
   color: #7a7a7a;
-  letter-spacing: 1.5px; }
+  letter-spacing: 2px; }
 
 .navbar-menu .navbar-item {
-  padding-right: 0px; }
+  margin-right: 5px; }
 
-.navbar-menu .navbar-item:last-child:after {
-  content: "";
-  padding: 0; }
+.navbar-menu .navbar-item:hover {
+  color: #ff7300; }
 
-.navbar-menu .navbar-item:after {
-  content: "\00B7";
-  padding-left: 0.75rem; }
-
-.mainHero .background-shapes {
-  z-index: -15;
-  position: absolute;
-  width: 100%; }
-  .mainHero .background-shapes .front-section {
-    width: 860px;
-    height: 768px;
-    border-bottom-left-radius: 42px;
-    background-color: whitesmoke;
-    position: relative;
-    right: -600px;
-    top: -360px;
-    box-shadow: 0 2px 49px 0 rgba(90, 22, 224, 0.27);
-    transform: skew(20deg, -5deg); }
-  .mainHero .background-shapes .back-section {
-    z-index: -2;
-    width: 1440px;
-    height: 200px;
-    border-bottom-left-radius: 42px;
-    position: relative;
-    top: -525px;
-    right: -850px;
-    background-color: rgba(170, 145, 219, 0.2);
-    transform: skew(20deg, -5deg); }
+.mainHero {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white; }
+  .mainHero .background-shapes {
+    display: none;
+    z-index: -15;
+    position: absolute;
+    width: 100%; }
+    .mainHero .background-shapes .front-section {
+      width: 860px;
+      height: 768px;
+      border-bottom-left-radius: 42px;
+      background-color: whitesmoke;
+      position: relative;
+      right: -600px;
+      top: -360px;
+      box-shadow: 0 2px 49px 0 rgba(90, 22, 224, 0.27);
+      transform: skew(20deg, -5deg); }
+    .mainHero .background-shapes .back-section {
+      z-index: -2;
+      width: 1440px;
+      height: 200px;
+      border-bottom-left-radius: 42px;
+      position: relative;
+      top: -525px;
+      right: -850px;
+      background-color: rgba(170, 145, 219, 0.2);
+      transform: skew(20deg, -5deg); }
 
 .mainHero .is-background {
   position: absolute;
@@ -6500,6 +6518,8 @@ html {
     text-align: justify;
     color: #7a7a7a;
     font-size: 0.9rem; }
+  .featureBlock h3 {
+    margin-bottom: 0.75rem !important; }
   .featureBlock figure {
     display: block;
     margin: 0 auto; }
@@ -6511,6 +6531,8 @@ html {
     padding: 2.5rem;
     box-shadow: 0 2px 12px 0 rgba(90, 22, 224, 0.27);
     border-radius: 6px; }
+    .pricingSection .priceBlock h5 {
+      font-weight: normal; }
     .pricingSection .priceBlock footer {
       margin-top: 2.5rem; }
     .pricingSection .priceBlock .subtitle {
@@ -6523,3 +6545,9 @@ html {
     .pricingSection .priceBlock figure {
       display: block;
       margin: 0 auto; }
+
+footer a, footer .fItem {
+  color: #7a7a7a !important; }
+
+footer a:hover {
+  color: #363636 !important; }

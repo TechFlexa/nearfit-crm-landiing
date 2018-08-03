@@ -1,30 +1,33 @@
 {% extends "mainLayout.njk" %} {% block content %}
-<section class="hero is-large mainHero">
+<section class="hero is-fullheight mainHero">
+  <div class="hero-head">
+  {% include "partials/navbar.njk" %}
+  </div>
   <div class="hero-body">
     <div class="container">
-      <div class="columns">
-        <div class="column is-5">
-          <h2 class="subtitle is-3">
-            Let
-            <i>Galaxy CRM</i> take the hard work while you focus on making your fitness centre better.
-          </h2>
-          <a class="button is-large is-primary">Get a free demo</a>
+      <div class="columns is-centered">
+      <div class="column is-5">
+          <img src="/assets/img/illustrations/gym-centre.svg">
         </div>
-        <div class="column is-5 is-offset-2">
-          <img src="/assets/img/illustrations/desktop-iphone.svg" style="transform: rotateZ(-5deg);">
+        <div class="column is-5 is-offset-1">
+        <h1 class="title is-3 p-title">Galaxy CRM</h1>
+          <p class="subtitle is-5">
+            Let us take all the hard work while you focus on making your fitness centre better.
+          </p>
+          <p style="color: rgba(0,0,0,0.60)">Galaxy CRM is a tool created to help enterprise and upcoming fitness centres to grow themseleves by creating a platform to help them mature and grow.</p>
+          <br>
+          
+          
+          <a class="button is-rounded is-medium is-light" href="#features">Features &nbsp; <span class="icon"><i class="fa fa-angle-right"></i></span></a>
+          &nbsp; &nbsp; 
+          <a class="button is-rounded is-medium is-primary is-outlined">Get free demo</a>
         </div>
-      </div>
-      <div class="has-text-centered">
-        <a href="#features" class="button is-info is-large">See What is GalaxyCRM</a>
+        
       </div>
     </div>
-
+  
   </div>
-  <div class="background-shapes">
-    <div class="front-section"></div>
-    <div class="back-section"></div>
-  </div>
-</section>
+  </section>
 <section id="features" class="hero is-medium is-light featuresSection">
   <div class="hero-body">
     <div class="container">
@@ -33,52 +36,53 @@
       </div>
       <div class="columns is-multiline is-centered">
         <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Easy to use</h3>
+          
           <figure class="image is-128x128">
             <img src="assets/img/illustrations/easy.svg" />
           </figure>
-
-          Get started with no prior experience of using any CRM software.
+<h3 class="title is-5">Easy to use</h3>
+          <p class="has-text-centered">Get started with no prior experience of using any CRM software.</p>
         </div>
         <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Grow business</h3>
+          
 
           <figure class="image is-128x128">
             <img src="assets/img/illustrations/grow-business.svg" />
           </figure>
-
-          Focus on other things, we got your management.
+<h3 class="title is-5">Grow business</h3>
+          <p class="has-text-centered">Focus on other things, we got your management.</p>
         </div>
         <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">24/7 support</h3>
+          
           <figure class="image is-128x128">
             <img src="assets/img/illustrations/support.svg" />
           </figure>
-
-          Forget the old days of managing your customers using ledgers and books.
+<h3 class="title is-5">24/7 support</h3>
+          <p class="has-text-centered">Forget the old days of managing your customers using ledgers and books.</p>
         </div>
         <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Secure Data</h3>
+          
           <figure class="image is-128x128">
             <img src="assets/img/illustrations/secure-data.svg" />
           </figure>
-
-          Your data won't fall into wrong hand.
+<h3 class="title is-5">Secure Data</h3>
+          <p class="has-text-centered">Your data won't fall into wrong hand.</p>
         </div>
         <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Cloud Based servers</h3>
+          
           <figure class="image is-128x128">
             <img src="assets/img/illustrations/secure-server.svg" />
           </figure>
-
-          Forget the old days of managing your customers using ledgers and books.
+<h3 class="title is-5">Cloud Based servers</h3>
+          <p class="has-text-centered">Forget the old days of managing your customers using ledgers and books.</p>
         </div>
         <div class="column is-3 featureBlock has-text-centered">
-          <h3 class="title is-4">Manage Gyms</h3>
+         
           <figure class="image is-128x128">
             <img src="assets/img/illustrations/manage-users.svg" />
           </figure>
-          Forget the old days of managing your customers using ledgers and books.
+           <h3 class="title is-5">Manage Gyms</h3>
+          <p class="has-text-centered">Forget the old days of managing your customers using ledgers and books.</p>
         </div>
       </div>
     </div>

@@ -2,7 +2,9 @@
 $primary: #ff7300;
 $family-primary: "Lato", serif;
 @import "../../node_modules/bulma/bulma";
-
+a{
+  transition: 0.3s;
+}
 h1,
 h2,
 h3,
@@ -10,6 +12,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+  font-weight: normal;
 }
 .p-title {
   color: $primary !important;
@@ -19,6 +22,24 @@ html {
 }
 .headingBlock {
   margin-bottom: 4.5rem;
+
+  h2{
+    font-weight: normal;
+    display: inline-block;
+    padding-bottom: 15px;
+    position: relative;
+    
+    
+  }
+  h2:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 0.125rem solid $primary;
+  }
 }
 .light-blue-bg {
   background-color: #58b4ff;
@@ -28,22 +49,24 @@ html {
 }
 .navbar-menu .navbar-item {
   color: $grey;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 .navbar-menu .navbar-item {
-  padding-right: 0px;
+  margin-right: 5px;
 }
-.navbar-menu .navbar-item:last-child:after {
-  content: "";
-  padding: 0;
-}
-.navbar-menu .navbar-item:after {
-  content: "\00B7";
-  padding-left: 0.75rem;
+.navbar-menu .navbar-item:hover{
+  color: $primary
 }
 
 .mainHero {
+  //background: url('/assets/img/bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $white;
+
   .background-shapes {
+    display: none;
     z-index: -15;
     position: absolute;
     width: 100%;
@@ -71,6 +94,8 @@ html {
       transform: skew(20deg, -5deg);
     }
   }
+  
+  
 }
 .mainHero .is-background {
   position: absolute;
@@ -94,7 +119,7 @@ html {
     font-size: 0.9rem;
   }
   h3 {
-    //later
+    margin-bottom: 0.75rem !important
   }
   figure {
     display: block;
@@ -111,6 +136,9 @@ html {
     box-shadow: 0 2px 12px 0 rgba(90, 22, 224, 0.27);
     border-radius: 6px;
 
+    h5{
+      font-weight: normal
+    }
     footer {
       margin-top: 2.5rem;
     }
@@ -128,5 +156,14 @@ html {
       display: block;
       margin: 0 auto;
     }
+  }
+}
+
+footer{
+  a,.fItem{
+    color: $grey !important;
+  }
+  a:hover{
+    color: $grey-darker !important
   }
 }
