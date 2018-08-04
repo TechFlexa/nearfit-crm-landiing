@@ -51,9 +51,6 @@ html {
   color: $grey;
   letter-spacing: 2px;
 }
-.navbar-menu .navbar-item {
-  margin-right: 3px;
-}
 .navbar-menu .navbar-item:hover{
   color: $primary
 }
@@ -133,14 +130,24 @@ html {
   .priceBlock {
     background-color: $light;
     padding: 2.5rem;
-    box-shadow: 0 2px 12px 0 rgba(90, 22, 224, 0.27);
+    border: solid 1px rgba(0,0,0, 0.15);
     border-radius: 6px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     h5{
       font-weight: normal
     }
     footer {
-      margin-top: 2.5rem;
+      margin: 0 auto;
+      margin-top: auto;
+
+      a.button{
+        margin-top:2.5rem;
+      }
     }
     .subtitle {
       color: $grey;

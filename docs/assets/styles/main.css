@@ -6463,9 +6463,6 @@ html {
   color: #7a7a7a;
   letter-spacing: 2px; }
 
-.navbar-menu .navbar-item {
-  margin-right: 3px; }
-
 .navbar-menu .navbar-item:hover {
   color: #ff7300; }
 
@@ -6529,12 +6526,19 @@ html {
   .pricingSection .priceBlock {
     background-color: whitesmoke;
     padding: 2.5rem;
-    box-shadow: 0 2px 12px 0 rgba(90, 22, 224, 0.27);
-    border-radius: 6px; }
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
     .pricingSection .priceBlock h5 {
       font-weight: normal; }
     .pricingSection .priceBlock footer {
-      margin-top: 2.5rem; }
+      margin: 0 auto;
+      margin-top: auto; }
+      .pricingSection .priceBlock footer a.button {
+        margin-top: 2.5rem; }
     .pricingSection .priceBlock .subtitle {
       color: #7a7a7a; }
     .pricingSection .priceBlock .media + .media {
