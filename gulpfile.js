@@ -13,7 +13,6 @@ var coffeeSources = ['app/scripts/hello.coffee'],
     htmlSources = ['**/*.html','app/templates/**/*.njk'],
     outputDir = 'docs/assets';
 
-
 gulp.task('sass', function() {
   gulp.src(sassSources)
   .pipe(sass({style: 'expanded'}))
